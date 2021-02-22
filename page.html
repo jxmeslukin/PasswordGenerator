@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div>
+            <h2>Unique Password Generator</h2>
+            <label for="character_length">Length of Password:</label>
+            <input name="character_length" id="charLength" type="number">
+            <br>
+            <br>
+            <input type="submit" value="Generate Password" onclick="myClick()">
+            <br>
+            <br>
+            <br>
+            <input name="generatedPassword" type="text" id="generatedPass" readonly="true" hidden="true"> 
+            <br>
+            <br>
+            <input name="clipboardSave" type="button" id="saveClipboard" value="Save to Clipboard" hidden="true" onclick="saveToClipboard()">
+        </div>
+    </body>
+</html>
